@@ -31,7 +31,7 @@ describe("Funcionalidade de tarefas", () => {
 		cy.get("header > p").should("contain", "Estudar testes de api")
   });
 
-	it.only('Deve adicionar tags em uma tarefa com sucesso', () => {
+	it('Deve adicionar tags em uma tarefa com sucesso', () => {
 		cy.adicionarLista();
     cy.adicionarTarefa();
 		cy.get(".content > header > p")
